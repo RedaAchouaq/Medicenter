@@ -1,4 +1,4 @@
-# redaachouaq
+# Medicenter
 
 A simple PHP/CSS/HTML web application — a small clinic / appointment-booking management system.
 
