@@ -1,0 +1,165 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, ul {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(137, 189, 248, 0.459), rgba(245, 141, 240, 0.425)),
+        url('denttt.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #0d6efd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.logo ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.logo ul li a:hover {
+    color: #ffc107;
+}
+
+.C {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.2s;
+}
+.C:hover {
+    color: #ffc107;
+
+}
+.C select {
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-right: 5px;   
+}
+.C select option {
+    padding: 8px;
+    font-size: 1rem;
+}
+.C select option:hover {
+    background: #f1e46b;
+}
+
+select, input[type="button"], input[type="submit"], input[type="Button"] {
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+input[type="button"], input[type="submit"], input[type="Button"] {
+    background: #ffc107;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="Button"]:hover {
+    background: #ff9800;
+}
+
+h1 {
+    margin: 40px 0 10px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0d6efd;
+}
+
+p, p, h4 {
+    text-align:left ;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: 80px;  
+    margin-right: auto;
+    font-size: 5vw;
+}
+
+p {
+    font-size: 1.3rem;
+    color: #080606;
+}
+
+p{
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #0d6efd;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="Button"] {
+    display: block;
+    margin: 30px auto;
+    font-size: 1.1rem;
+    padding: 12px 32px;
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+
+input[type="Button"]:hover {
+    background: #084298;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .logo ul {
+        gap: 15px;
+        flex-direction: column;
+    }
+    .C {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
